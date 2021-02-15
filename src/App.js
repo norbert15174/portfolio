@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Menu from "./components/menu/menu";
+import styled from "styled-components";
+import Header from "./components/headerSection/header";
+
+const MainContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1525227661914-3ed79b83624e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGRhcmtuZXNzfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: 160vw 100%;
+  background-position-x: -60vw;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Menu></Menu>
+      <MainContainer>
+        
+        <Header></Header>
+      </MainContainer>
+    </>
   );
 }
 
