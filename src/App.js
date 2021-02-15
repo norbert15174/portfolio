@@ -1,6 +1,8 @@
 import Menu from "./components/menu/menu";
 import styled from "styled-components";
 import Header from "./components/headerSection/header";
+import About from "./components/About/abouts";
+import Skills from "./components/Skills/skills";
 
 const MainContainer = styled.div`
   width: 100vw;
@@ -17,9 +19,10 @@ function App() {
     <>
     <Menu></Menu>
       <MainContainer>
-        
         <Header></Header>
       </MainContainer>
+      <About></About>
+      <Skills></Skills>
     </>
   );
 }
