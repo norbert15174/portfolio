@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./components/headerSection/header";
 import About from "./components/About/abouts";
 import Skills from "./components/Skills/skills";
+import Project from "./components/Projects/project";
 
 const MainContainer = styled.div`
   width: 100vw;
@@ -23,6 +24,7 @@ function App() {
       </MainContainer>
       <About></About>
       <Skills></Skills>
+      <Project></Project>
     </>
   );
 }

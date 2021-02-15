@@ -1,5 +1,15 @@
 import react from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fill = (width) =>
+  keyframes`
+    from {
+      width: 0;
+    }
+    to {
+      width: ${width};
+    }
+  `;
 
 const ItemContainer = styled.div`
   position: relative;
@@ -24,7 +34,7 @@ const ItemContainer = styled.div`
   &:before {
     content: " ";
     display: block;
-    width: ${(props) => props.procent};
+    width: ${({procent}) => procent};
     background-color: #f53722;
     height: 15px;
     border-top-left-radius: 8px;
@@ -32,25 +42,7 @@ const ItemContainer = styled.div`
     position: absolute;
     top: 70px;
     z-index: 10;
-    animation: ${(props) => props.procent === 'yes' ? 'asas 2s' : 'fill 1.5s'};
-    @keyframes fill {
-      from {
-        width: 0;
-      }
-
-      to {
-        width: ${(props) => props.procent};
-      }
-    }
-    @keyframes asas {
-      from {
-        width: 0;
-      }
-
-      to {
-        width: 60%;
-      }
-    }
+    animation: ${({ procent }) => fill(procent)} 2s;
   }
   @media only screen and (max-width: 900px) {
     font-size: 20px;
@@ -69,14 +61,18 @@ const ItemContainer = styled.div`
 
 const ProcentText = styled.span`
   position: absolute;
-  left: ${(props) => props.procent};
+  left: ${({procent}) => procent};
   font-size: 12px;
-  top: 45px;
+  top: 68px;
+  z-index: 20;
+  @media only screen and (max-width: 1200px) {
+    top: 50px;
+  }
 `;
 
 const Item = ({ iName, procent }) => (
   <ItemContainer procent={procent}>
-    {iName} <ProcentText fill={procent === '60%' ? 'yes' : 'no'} procent={procent}>{procent} {procent === '60%' ? 'yes' : 'no'}</ProcentText>
+    {iName} <ProcentText procent={procent}>{procent}</ProcentText>
   </ItemContainer>
 );
 
