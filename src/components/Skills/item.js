@@ -12,6 +12,7 @@ const fill = (width) =>
   `;
 
 const ItemContainer = styled.div`
+  
   position: relative;
   left: 10%;
   width: 80%;

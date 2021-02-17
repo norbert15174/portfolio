@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Typed from 'react-typed';
 
 const Container = styled.div`
+    position: relative;
+    z-index: 100;
     @media only screen and (max-width: 900px) {
         width: 100vw;
         height: 80vh;
@@ -17,7 +19,7 @@ const Container = styled.div`
 const Text = styled.div`
     color: white;
     font-size: 60px;
-    left: calc(100vw - 500px);
+    left: calc(100px);
     width: 400px;
     top: 250px;
     position: relative;
@@ -39,8 +41,8 @@ const Text = styled.div`
     @media only screen and (max-width: 900px) {
     color: white;
     font-size: 40px;
-    left: calc(100vw - 350px);
-    width: 300px;
+    left: calc(100px);
+    width: 350px;
     padding-bottom: 5px;
     top: 200px;
     border-bottom: 2px solid red;
@@ -52,7 +54,7 @@ const Text = styled.div`
         font-weight: 200;
     }
     &:nth-child(3){
-        font-size: 25px;
+        font-size: 35px;
         padding-top: 5px;
         text-align: left;
         border: none;
@@ -60,11 +62,11 @@ const Text = styled.div`
     }
     }
     @media only screen and (max-width: 600px){
-        left: calc(100vw - 200px);
-        width: 160px;
-        font-size: 22px;
+        left: calc(100px);
+        width: 200px;
+        font-size: 30px;
         &:nth-child(3){
-            font-size: 15px;
+            font-size: 20px;
         }
     }
 
@@ -74,7 +76,7 @@ function Header() {
     return (
       <Container>
           <Text>Hello, I am</Text>
-          <Text>Faron Norbert</Text>
+          <Text>Faron Norbert sdadsadsasdsadsad</Text>
           <Text><Typed
                     strings={['Java Intern','Junior Java Developer','Student']}
                     typeSpeed={70}

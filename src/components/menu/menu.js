@@ -124,7 +124,8 @@ const NoteBookDisplay = styled.div`
   left: 40vw;
   text-align: center;
   padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+  padding-right: 10px;
   position: absolute;
   color: white;
   z-index: 500;

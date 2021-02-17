@@ -2,11 +2,12 @@ import react from "react";
 import styled from "styled-components";
 
 const AboutMe = styled.div`
+  padding-top: 80px;
   width: 100vw;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   background-color: black;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   @media only screen and (max-width: 900px) {
     grid-template-columns: 100%;
     padding-bottom: 50px;
@@ -36,14 +37,19 @@ const TextHeader = styled.h1`
 
 const AboutPhoto = styled.img`
 
-clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0% 100%);
-    width: 110%;
+  clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 90%;
     left: -10%;
     position: relative;
     height: 80%;
-    max-height: 500px;
-    top: 100px;
+    max-height: 800px;
+    top: 80px;
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      top: 120px;
+    }
     @media only screen and (max-width: 900px) {
+    
     width: 100%;
     clip-path: none;
     height: 100%;
@@ -67,7 +73,7 @@ function About() {
           I am looking for an internship where I could expand my skills and
           become a better programmer.
         </AboutText>
-        <AboutPhoto src="https://media.istockphoto.com/photos/stubble-guy-picture-id1051185180?k=6&m=1051185180&s=612x612&w=0&h=LJ6VAgbPmX4T4PRHEjCyeOF3xOZd3cSImWDM4cr1Rew="></AboutPhoto>
+        <AboutPhoto src="https://i.ibb.co/QpBbtN2/20210216-225118.jpg"></AboutPhoto>
 
       
     </AboutMe>
