@@ -53,6 +53,7 @@ const GitHub = styled(ImGithub)`
   position: absolute;
   bottom: -100px;
   left: 0;
+  cursor: pointer;
   @media only screen and (max-width: 1200px) {
       font-size: 60px;
   }
@@ -120,6 +121,7 @@ const Textik = styled.p`
     color: white;
     font-weight: 700;
     font-style: italic;
+    cursor: pointer;
     @media only screen and (max-width: 900px) {
       font-size: 25px;
     }

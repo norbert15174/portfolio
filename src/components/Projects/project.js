@@ -1,6 +1,7 @@
 import react from "react";
 import styled from "styled-components";
 import Item from "./item";
+import SectionTitle from "./../sketch/sectionTitle"
 
 const ProjectContainer = styled.div`
 
@@ -15,6 +16,7 @@ const ProjectContainer = styled.div`
 
 const Project = () => (
     <ProjectContainer>
+        <SectionTitle title="projects"/>
         <Item direction="left" projectName="Telephoners backend" img="https://cdn.discordapp.com/attachments/785944190365204521/810984782439645244/unknown.png"/>
         <Item direction="right" projectName="Zgłoś Zabytek" img="https://i.ibb.co/K6KttTm/Untitled.png"/>
         <Item direction="left" projectName="Cinema Booking System" img="https://i.ibb.co/mR78SQk/Untitled2.png"/>

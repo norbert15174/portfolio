@@ -48,6 +48,7 @@ const Item = styled.div`
     opacity: 1s;
     animation: display 2s;
     font-weight: 600;
+    cursor: pointer;
     @keyframes display {
       0% {
         opacity: 0;
@@ -138,6 +139,7 @@ const NoteBookDisplay = styled.div`
 const ItemNoteBook = styled.div`
   border-bottom: none;
   transition: border-bottom 1s;
+  cursor: pointer;
   &::after {
     content: " ";
     width: 0%;

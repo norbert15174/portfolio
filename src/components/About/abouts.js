@@ -15,6 +15,7 @@ const AboutMe = styled.div`
 `;
 
 const AboutText = styled.div`
+  top: 100px;
   width: 70%;
   padding-bottom: 20px;
   position: relative;
@@ -42,7 +43,7 @@ const AboutPhoto = styled.img`
     left: -10%;
     position: relative;
     height: 80%;
-    max-height: 800px;
+    max-height: 1000px;
     top: 80px;
     @media only screen and (max-width: 1200px) {
       width: 100%;
@@ -73,7 +74,7 @@ function About() {
           I am looking for an internship where I could expand my skills and
           become a better programmer.
         </AboutText>
-        <AboutPhoto src="https://i.ibb.co/QpBbtN2/20210216-225118.jpg"></AboutPhoto>
+        <AboutPhoto src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg"></AboutPhoto>
 
       
     </AboutMe>

@@ -76,7 +76,7 @@ function Header() {
     return (
       <Container>
           <Text>Hello, I am</Text>
-          <Text>Faron Norbert sdadsadsasdsadsad</Text>
+          <Text>Faron Norbert</Text>
           <Text><Typed
                     strings={['Java Intern','Junior Java Developer','Student']}
                     typeSpeed={70}
