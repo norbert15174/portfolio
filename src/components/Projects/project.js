@@ -2,6 +2,7 @@ import react from "react";
 import styled from "styled-components";
 import Item from "./item";
 import SectionTitle from "./../sketch/sectionTitle"
+import {connect} from 'react-redux';
 
 const ProjectContainer = styled.div`
 

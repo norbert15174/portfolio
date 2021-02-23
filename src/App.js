@@ -4,6 +4,8 @@ import Header from "./components/headerSection/header";
 import About from "./components/About/abouts";
 import Skills from "./components/Skills/skills";
 import Project from "./components/Projects/project";
+import {Provider} from 'react-redux';
+import store from './components/store/index';
 
 const MainContainer = styled.div`
   width: 100vw;
@@ -29,7 +31,7 @@ const MainContainer = styled.div`
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
     <Menu></Menu>
       <MainContainer>
         <Header></Header>
@@ -37,7 +39,7 @@ function App() {
       <About></About>
       <Skills></Skills>
       <Project></Project>
-    </>
+    </Provider>
   );
 }
 
