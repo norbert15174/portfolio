@@ -74,7 +74,7 @@ function About() {
           I am looking for an internship where I could expand my skills and
           become a better programmer.
         </AboutText>
-        <AboutPhoto src="https://ocdn.eu/pulscms-transforms/1/iW-k9kpTURBXy9mOTk1NzZhNTY3YjhlYjljZWQ3MDcxMGJjNWEzZTZhNy5qcGeTlQMAFs0C1M0Bl5MFzQMUzQG8kwmmNTk2MTk0BoGhMAE/gettyimages-954867550.jpg"></AboutPhoto>
+        <AboutPhoto src="https://storage.googleapis.com/telephoners/20210216_225118.jpg"></AboutPhoto>
 
       
     </AboutMe>
